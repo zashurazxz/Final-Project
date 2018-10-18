@@ -1,0 +1,63 @@
+body,div,p {
+	margin:0;
+	padding:0;
+	font-family:Helvetica,sans-serif;
+	font-size:18px;
+}
+
+
+html {
+	background:url("http://ivayloyovchev.com/pulsepro/data/img/gallery/wedding/IMG_3312.jpg") no-repeat center center fixed;
+	background-size:cover;
+}
+
+.menu {
+	position:fixed;
+	top:10%;
+	left:-40px;
+	z-index:100;
+}
+
+.menu li {
+	list-style:none;
+	display:block;
+	margin-bottom:5px;
+	margin-left:0;
+	padding:20px;
+	background-color:rgba(0,0,0,0.7);
+	box-sizing:border-box;
+	text-align:center;
+	width:140px;
+	cursor:pointer;
+}
+
+.menu li.active {
+	background-color:rgba(91,193,177,.75);
+	cursor:default;
+}
+
+.menu li a {
+	text-decoration:none;
+	color:#fff;
+}
+
+.page {
+	position:relative;
+	background-color:rgba(0,0,0,0.7);
+	width:70%;
+	height:100%;
+	position:fixed;
+	left:-70%;
+	overflow:hidden;
+	z-index:10;
+}
+
+.page-content {
+	position:absolute;
+	width:55%;
+	height:80%;
+	top:10%;
+	right:15%;
+	color:#fff;
+	overflow:auto;
+}
