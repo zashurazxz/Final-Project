@@ -11,47 +11,97 @@
 
 <body>
 
-    <ul class="menu">
-        <li class="to-home"><a href="#">Home</a></li>
-        <li><a href="#about">About Cats</a></li>
-        <li><a href="#gallery">Gallery</a></li>
-        <li><a href="#links">Links</a></li>
-        <li><a href="#contacts">Contacts</a></li>
-    </ul>
-
-    <div id="about" class="page">
-        <div class="page-content">
-            <h2>About cats</h2>
-
-            <p>Cats are cute</p>
-        </div>
+<ul class="menu">
+    <li class="clear-back"><a href="#home">Background</a></li>
+    <li><a href="#home">Home</a></li>
+    <li><a href="#about">Vacation Packages</a></li>
+    <li><a href="#gallery">Customer Registration</a></li>
+    <li><a href="#links">Links</a></li>
+    <li><a href="#contacts">Contact Us</a></li>
+</ul>
+<div id="home" class="page">
+    <div class="page-content">
+        <h2>This is the Home Page</h2>
+        <p>this site is kind of about Travel</p>
     </div>
-
-    <div id="gallery" class="page">
-        <div class="page-content">
-            <h2>Gallery</h2>
-
-            <p>Gallery with cats</p>
-        </div>
+</div>
+<div id="about" class="page">
+    <div class="page-content">
+        <h2>Vacation Packages</h2>
+        <p>Wow so many packages</p>
+        <ul>
+            <li>
+               <p>package 1</p>
+               <img src="./travel.jpg" alt="1">
+            </li>
+            <li>
+               <p>package 2</p>
+               <img src="./travel2.jpg" alt="2">
+            </li>
+            <li>
+               <p>package 3</p>
+               <img src="./travel3.jpg" alt="3">
+            </li>
+            <li>
+               <p>package 4</p>
+               <img src="./travel4.jpg" alt="4">
+            </li>
+            <li>
+               <p>package 5</p>
+               <img src="./travel5.jpg" alt="5">
+            </li>
+            <div id="image-container">
+                <img class="package1" src="./travel.jpg" alt="1">
+                <img class="package2" src="./travel2.jpg" alt="2">
+                <img class="package3" src="./travel3.jpg" alt="3">
+                <img class="package4" src="./travel4.jpg" alt="4">
+                <img class="package5" src="./travel5.jpg" alt="5">
+            </div>
+        </ul>
     </div>
+</div>
 
-    <div id="links" class="page">
-        <div class="page-content">
-            <h2>Links</h2>
-
-            <p>Links to blogs with cats</p>
-        </div>
+<div id="gallery" class="page">
+    <div class="page-content">
+        <h2>Customer Registration</h2>
+        <p>lots of stuff you have to register</p>
+        <P>Name</P>
+        <p>address</p>
+        <p>city</p>
+        <p>province</p>
+        <p>postal code</p>
+        <p>email address</p>
+        <p>phone number</p>
+        <button type="submit">submit</button>
+        <form action="submit"> use a form validation</form>
     </div>
+</div>
 
-    <div id="contacts" class="page">
-        <div class="page-content">
-            <h2>Contacts</h2>
-
-            <p>Some contact form</p>
-        </div>
+<div id="links" class="page">
+    <div class="page-content">
+        <h2>Links</h2>
+        <p>Links to some sexy travel locations</p>
     </div>
+</div>
+
+<div id="contacts" class="page">
+    <div class="page-content">
+        <h2>Contacts</h2>
+        <p>Some contact form</p>
+        <p>
+            use 2 javascript arrays
+            that use travel agents names and phone numbers to generate a list of contact info for the agency
+        </p>
+    </div>
+</div>
     
-<script src=""></script>
+
+
+<footer id="footing"></footer>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TweenLite.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TweenMax.min.js"></script>
 <script src="./script.js"></script>
 </body>
 </html>

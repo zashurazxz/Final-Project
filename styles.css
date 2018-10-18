@@ -7,7 +7,7 @@ body,div,p {
 
 
 html {
-	background:url("http://ivayloyovchev.com/pulsepro/data/img/gallery/wedding/IMG_3312.jpg") no-repeat center center fixed;
+	background:url("./beach.jpg") no-repeat center center fixed;
 	background-size:cover;
 }
 
@@ -60,4 +60,41 @@ html {
 	right:15%;
 	color:#fff;
 	overflow:auto;
+}
+#image-container{
+	display: none;
+}
+.package1{
+	display: none;
+	background:url("./beach.jpg") no-repeat center center fixed;
+	background-size:cover;
+}
+.package2{
+	display: none;
+	background:url("./beach.jpg") no-repeat center center fixed;
+	background-size:cover;
+}
+.package3{
+	display: none;
+	background:url("./beach.jpg") no-repeat center center fixed;
+	background-size:cover;
+}
+.package4{
+	display: none;
+	background:url("./beach.jpg") no-repeat center center fixed;
+	background-size:cover;
+}
+.package5{
+	background: no-repeat center center fixed;
+	background-size:cover;
+}
+li img{
+	display: none;
+}
+#footing{
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	display: flex;
+	justify-content: center;
 }

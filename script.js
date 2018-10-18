@@ -1,16 +1,15 @@
+// Code by Xavier Alexis-Leon
+// 
 $(function() {
-//Image by Ivaylo Yovchev (  http://ivayloyovchev.com/weddings )
-      
 //elements
 var $menu = $(".menu");
 var $pages = $(".page");
-var $menuLi = $menu.find("li").not(".to-home");
-var $toHome = $menu.find(".to-home");
-        
+var $menuLi = $menu.find("li").not(".clear-back");
+var $toback = $menu.find(".clear-back");
 //interna vars
 var currentPage = "";
         
-$toHome.on("click", function() {
+$toback.on("click", function() {
     currentPage = "";
     TweenMax.to($pages, 0.5, {
         left: "-70%"
@@ -20,11 +19,9 @@ $toHome.on("click", function() {
     });
 });
         
-$menuLi.on("click", function(event) {
-            
+$menuLi.on("click", function(event) { 
     var $this = $(this);
-    var thisHref = $this.find("a").attr("href");
-            
+    var thisHref = $this.find("a").attr("href");    
     if (currentPage !== thisHref && $pages.filter(thisHref).length > 0) {
         currentPage = thisHref;
         TweenMax.to($pages, 0.5, {
@@ -39,7 +36,16 @@ $menuLi.on("click", function(event) {
         TweenLite.to($this, 0.5, {
             className: "+=active"
         });
-    }
-            
+    }      
     event.preventDefault();
 });});
+
+document.getElementById("footing").innerHTML = formatAMPM();
+function formatAMPM() {
+var d = new Date(),
+    months = ['January','Febuary','March','April','May','June','July','Aughust','September','October','November','December'],
+    days = ['Sunday','Monday','Tuesday','Wednesday','Thursday','Friday','Saturday'];
+return days[d.getDay()]+' '+months[d.getMonth()]+' '+d.getDate()+'th '+d.getFullYear();
+}
+
+
