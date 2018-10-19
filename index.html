@@ -1,5 +1,13 @@
+<!-- Code by Xavier Alexis-Leon
+Email notzash@live.com
+oct 19 2018
+java script, web dev course
+final project -->
+
+
 <!DOCTYPE html>
 <html lang="en">
+
 
 <head>
     <meta charset="UTF-8">
@@ -9,95 +17,111 @@
     <title>Document</title>
 </head>
 
+
 <body>
 
+
+<!-- there is an extra menu item to clear the slide in page so you can see just the background and footer -->
 <ul class="menu">
-    <li class="clear-back"><a href="#home">Background</a></li>
+    <li class="clear-back"><a href="#home">Travel Agency</a></li>
     <li><a href="#home">Home</a></li>
-    <li><a href="#about">Vacation Packages</a></li>
-    <li><a href="#gallery">Customer Registration</a></li>
+    <li><a href="#products">Vacation Packages</a></li>
+    <li><a href="#registry">Customer Registration</a></li>
     <li><a href="#contacts">Contact Us</a></li>
 </ul>
+
+
+<!-- home page/index -->
 <div id="home" class="page">
     <div class="page-content">
         <h2>This is the Home Page</h2>
-        <p>this site is kind of about a Travel agency,  Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi iure officia in? Molestias, numquam a. Alias id tenetur optio maiores, neque animi modi voluptates esse soluta minus dolor inventore hic!</p>
-    </div>
-</div>
-<div id="about" class="page">
-    <div class="page-content">
-        <h2>Vacation Packages</h2>
-        <p>Wow so many packages</p>
-        <ul>
-            <li>
-               <p>package 1</p>
-            </li>
-            <li>
-               <p>package 2</p>
-            </li>
-            <li>
-               <p>package 3</p>
-            </li>
-            <li>
-               <p>package 4</p>
-            </li>
-            <li>
-               <p>package 5</p>
-            </li>
-            <div id="image-container">
-                <div class="imgbox">
-                        <img data-alt-src="./travel2.jpg" src="./travel.jpg" />
-                </div>
-                <div class="imgbox">
-                        <img data-alt-src="./travel2.jpg" src="./travel.jpg" />
-                </div>
-                <div class="imgbox">
-                        <img data-alt-src="./travel2.jpg" src="./travel.jpg" />
-                </div>
-            </div>
-        </ul>
+        <p>this site is kind of about a Travel agency</p>
+        <hr>
+        <p>ipsum dolor sit amet consectetur adipisicing elit. Nisi iure officia in? Molestias, numquam a. Alias id tenetur optio maiores, neque animi modi voluptates esse soluta minus dolor inventore hic!</p>
+        <br>
+        <p>ipsum dolor sit amet consectetur adipisicing elit. Nisi iure officia in? Molestias, numquam a. Alias id tenetur optio maiores, neque animi modi voluptates esse soluta minus dolor inventore hic!</p>
+        <br>
+        <p>ipsum dolor sit amet consectetur adipisicing elit. Nisi iure officia in? Molestias, numquam a. Alias id tenetur optio maiores, neque animi modi voluptates esse soluta minus dolor inventore hic!</p>
     </div>
 </div>
 
-<div id="gallery" class="page">
+
+<!-- vacation packages page -->
+<div id="products" class="page">
     <div class="page-content">
-        <h2>Customer Registration</h2>
-        <p>lots of stuff you have to register</p>
-        <P>Name</P>
-        <p>address</p>
-        <p>city</p>
-        <p>province</p>
-        <p>postal code</p>
-        <p>email address</p>
-        <p>phone number</p>
-        <button type="submit">submit</button>
-        <form action="submit"> use a form validation</form>
-        <div class="container">
-            <div class="path">
-                <span id="elem" class="shape trail"></span> 
+        <h2>Vacation Packages</h2>
+        <p>Wow so many packages Hover over one to see its image</p>
+        <div id="image-container">
+            <ul>
+                <li class="imgswapper" id="first">
+                    <p>package 1: a nice colosseum</p>
+                </li>
+                <br>
+                <li class="imgswapper" id="second">
+                    <p>package 2: a lovely mountain range</p>
+                </li>
+                <br>
+                <li class="imgswapper" id="third">
+                    <p>package 3: palm trees in the wind</p>
+                </li>
+                <br>
+                <li class="imgswapper" id="fourth">
+                    <p>package 4: a view of islands from above</p>
+                </li>
+                <br>
+                <li class="imgswapper" id="fifth">
+                    <p>package 5: mountains by a lake</p>
+                </li>
+            </ul>
+            <div id="placeholder"></div>
+        </div>
+    </div>
+</div>
+
+
+<!-- customer registration page -->
+<div id="registry" class="page">
+    <div class="container2">
+        <div class="path">
+            <span id="elem" class="shape trail"></span> 
+        </div>
+    </div>
+    <div class="page-content">
+        <div id="container">
+            <h2>Please register here</h2>
+            <div id="form1">
             </div>
         </div>
     </div>
 </div>
 
+
+<!-- contact us page -->
 <div id="contacts" class="page">
     <div class="page-content">
         <h2>Contacts</h2>
-        <p>Some contact form</p>
+        <p>Some Contact Page</p>
+        <br>
         <p>
-            use 2 javascript arrays
+            Use 2 javascript arrays
             that use travel agents names and phone numbers to generate a list of contact info for the agency
         </p>
-        <div id="agents"></div>
+        <div class="arrayholder">
+        <div id="agents"></div><div id="agent"></div>
+        </div>
     </div>
 </div>
     
 
+<!-- footer -->
 <footer id="footing"></footer>
 
+
+<!-- scripts -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TweenLite.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TweenMax.min.js"></script>
 <script src="./script.js"></script>
+
 </body>
 </html>
