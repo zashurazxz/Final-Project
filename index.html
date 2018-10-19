@@ -16,13 +16,12 @@
     <li><a href="#home">Home</a></li>
     <li><a href="#about">Vacation Packages</a></li>
     <li><a href="#gallery">Customer Registration</a></li>
-    <li><a href="#links">Links</a></li>
     <li><a href="#contacts">Contact Us</a></li>
 </ul>
 <div id="home" class="page">
     <div class="page-content">
         <h2>This is the Home Page</h2>
-        <p>this site is kind of about Travel</p>
+        <p>this site is kind of about a Travel agency,  Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi iure officia in? Molestias, numquam a. Alias id tenetur optio maiores, neque animi modi voluptates esse soluta minus dolor inventore hic!</p>
     </div>
 </div>
 <div id="about" class="page">
@@ -32,11 +31,9 @@
         <ul>
             <li>
                <p>package 1</p>
-               <img src="./travel.jpg" alt="1">
             </li>
             <li>
                <p>package 2</p>
-               <img src="./travel2.jpg" alt="2">
             </li>
             <li>
                <p>package 3</p>
@@ -44,18 +41,20 @@
             </li>
             <li>
                <p>package 4</p>
-               <img src="./travel4.jpg" alt="4">
             </li>
             <li>
                <p>package 5</p>
-               <img src="./travel5.jpg" alt="5">
             </li>
             <div id="image-container">
-                <img class="package1" src="./travel.jpg" alt="1">
-                <img class="package2" src="./travel2.jpg" alt="2">
-                <img class="package3" src="./travel3.jpg" alt="3">
-                <img class="package4" src="./travel4.jpg" alt="4">
-                <img class="package5" src="./travel5.jpg" alt="5">
+                <div class="imgbox">
+                        <img data-alt-src="./travel2.jpg" src="./travel.jpg" />
+                </div>
+                <div class="imgbox">
+                        <img data-alt-src="./travel2.jpg" src="./travel.jpg" />
+                </div>
+                <div class="imgbox">
+                        <img data-alt-src="./travel2.jpg" src="./travel.jpg" />
+                </div>
             </div>
         </ul>
     </div>
@@ -74,13 +73,11 @@
         <p>phone number</p>
         <button type="submit">submit</button>
         <form action="submit"> use a form validation</form>
-    </div>
-</div>
-
-<div id="links" class="page">
-    <div class="page-content">
-        <h2>Links</h2>
-        <p>Links to some sexy travel locations</p>
+        <div class="container">
+            <div class="path">
+                <span id="elem" class="shape trail"></span> 
+            </div>
+        </div>
     </div>
 </div>
 
@@ -92,10 +89,10 @@
             use 2 javascript arrays
             that use travel agents names and phone numbers to generate a list of contact info for the agency
         </p>
+        <div id="agents"></div>
     </div>
 </div>
     
-
 
 <footer id="footing"></footer>
 
